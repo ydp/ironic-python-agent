@@ -439,6 +439,7 @@ class IronicPythonAgent(base.ExecuteCommandMixin):
 
     def run(self):
         """Run the Ironic Python Agent."""
+        LOG.info('================= pyuan ======================')
         LOG.info('Starting ironic-python-agent version: %s',
                  self.version)
         # Get the UUID so we can heartbeat to Ironic. Raises LookupNodeError
